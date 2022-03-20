@@ -7,8 +7,8 @@ export const theme = {
 	},
 
 	fonts: {
-		regular: 'Inter_400Regular',
-		medium: 'Inter_500Medium',
-		bold: 'Inter_700Bold',
+		regular: 'Poppins_400Regular',
+		medium: 'Poppins_600SemiBold',
+		bold: 'Poppins_800ExtraBold',
 	},
 };
