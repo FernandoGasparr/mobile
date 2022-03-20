@@ -9,6 +9,7 @@ import RightsScreen from './screens/RightsScreen';
 
 // icons
 import { FontAwesome } from '@expo/vector-icons';
+import { theme } from './styles/theme';
 
 const Tab = createBottomTabNavigator();
 
@@ -17,10 +18,10 @@ function MyTabs() {
 		<Tab.Navigator
 			initialRouteName='Home Screen'
 			screenOptions={{
-				tabBarInactiveTintColor: '#fbf2c0',
-				tabBarInactiveBackgroundColor: '#262626',
-				tabBarActiveTintColor: '#262626',
-				tabBarActiveBackgroundColor: '#bf8069',
+				tabBarInactiveTintColor: theme.colors.skin,
+				tabBarInactiveBackgroundColor: theme.colors.black,
+				tabBarActiveTintColor: theme.colors.beige,
+				tabBarActiveBackgroundColor: theme.colors.skin,
 			}}
 		>
 			<Tab.Screen
