@@ -1,5 +1,5 @@
 import { View, Text, Image } from 'react-native';
-import logo from '../assets/icon.png';
+import logo from './../../assets/icon.png';
 
 const Header = () => {
 	return (
