@@ -6,6 +6,7 @@ const HomeScreen = () => {
 		<View>
 			<Text
 				style={{
+					marginTop: '20%',
 					fontSize: 30,
 				}}
 			>
