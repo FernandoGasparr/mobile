@@ -1,20 +1,18 @@
 import { View, Text, StyleSheet, SafeAreaView, ScrollView } from 'react-native';
 import { theme } from '../styles/theme';
 import React from 'react';
+import HeroRights from '../components/HeroRights/Index';
+import RightsCards from '../components/RightsCards';
 
 const RightsScreen = () => {
 	return (
 		<View style={styles.container}>
-			<Text
-				style={{
-					marginTop: '10%',
-					fontSize: 30,
-					fontFamily: theme.fonts.bold,
-					textAlign: 'center',
-				}}
-			>
-				Seus Direitos
-			</Text>
+			<SafeAreaView style={styles.container}>
+				<ScrollView style={styles.scrollView}>
+					<HeroRights />
+					<RightsCards />
+				</ScrollView>
+			</SafeAreaView>
 		</View>
 	);
 };

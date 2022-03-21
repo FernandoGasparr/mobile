@@ -1,8 +1,8 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, StatusBar } from 'react-native';
 import Header from './components/Header/Header';
 import Navigation from './Navigation';
 import AppLoading from 'expo-app-loading';
+import { theme } from './styles/theme';
 // font
 import {
 	useFonts,
@@ -25,8 +25,8 @@ export default function App() {
 	}
 	return (
 		<>
-			<StatusBar backgroundColor='transparent' translucent style='auto' />
-			{/* <Header /> */}
+			<StatusBar translucent style='auto' backgroundColor='transparent' />
+			<Header />
 			<Navigation />
 		</>
 	);

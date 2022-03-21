@@ -1,4 +1,4 @@
-import { View, StyleSheet } from 'react-native';
+import { View, StyleSheet, Text } from 'react-native';
 import Member from './Member';
 import abimael from '../../assets/abimael.png';
 import gustavo from '../../assets/gustavo.png';
@@ -6,6 +6,7 @@ import jonatan from '../../assets/jonatan.png';
 import fernando from '../../assets/fernando.png';
 import renan from '../../assets/renan.png';
 import rodrigo from '../../assets/rodrigo.png';
+import { theme } from '../../styles/theme';
 
 const Team = () => {
 	const members = [
@@ -65,11 +66,14 @@ const Team = () => {
 		},
 	];
 	return (
-		<View style={styles.container}>
-			{members.map(member => {
-				return <Member nome={member.nome} img={member.img} key={member.id} />;
-			})}
-		</View>
+		<>
+			<Text style={styles.title}>Nosso Time</Text>
+			<View style={styles.container}>
+				{members.map(member => {
+					return <Member nome={member.nome} img={member.img} key={member.id} />;
+				})}
+			</View>
+		</>
 	);
 };
 const styles = StyleSheet.create({
@@ -78,6 +82,13 @@ const styles = StyleSheet.create({
 		flexWrap: 'wrap',
 		justifyContent: 'center',
 		alignItems: 'center',
+	},
+	title: {
+		paddingTop: 14,
+		color: theme.colors.black,
+		textAlign: 'center',
+		fontSize: 28,
+		fontFamily: theme.fonts.bold,
 	},
 });
 export default Team;
