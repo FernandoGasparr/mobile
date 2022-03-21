@@ -2,6 +2,7 @@ import { View, Text, StyleSheet, SafeAreaView, ScrollView } from 'react-native';
 import React from 'react';
 import Conquest from '../components/conquest/Index';
 import { theme } from './../styles/theme';
+import Lives from '../components/Lives/Index';
 const HomeScreen = () => {
 	return (
 		<View style={styles.container}>
@@ -9,6 +10,7 @@ const HomeScreen = () => {
 			<SafeAreaView style={styles.container}>
 				<ScrollView style={styles.scrollView}>
 					<Conquest />
+					<Lives />
 				</ScrollView>
 			</SafeAreaView>
 		</View>
