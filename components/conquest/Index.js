@@ -1,6 +1,7 @@
 import { View, Text, StyleSheet } from 'react-native';
 import { theme } from '../../styles/theme';
 import { FontAwesome } from '@expo/vector-icons';
+import { FontAwesome5 } from '@expo/vector-icons';
 
 const Conquest = () => {
 	return (
@@ -8,19 +9,23 @@ const Conquest = () => {
 			<Text style={styles.title}>Nossas Conquistas</Text>
 			<View style={styles.cardContainer}>
 				<View style={styles.card}>
-					<FontAwesome name='group' size={70} color={theme.colors.black} />
-					<Text style={styles.text}>500</Text>
-					<Text style={styles.text}>Pessoas</Text>
+					<FontAwesome name='bullhorn' size={70} color={theme.colors.black} />
+					<Text style={styles.text}>200</Text>
+					<Text style={styles.text}>Denuncias</Text>
+					<Text style={styles.text}>feitas</Text>
 				</View>
+
 				<View style={styles.card}>
-					<FontAwesome name='group' size={70} color={theme.colors.black} />
-					<Text style={styles.text}>500</Text>
-					<Text style={styles.text}>Pessoas</Text>
+					<FontAwesome5 name='city' size={70} color={theme.colors.black} />
+					<Text style={styles.text}>10</Text>
+					<Text style={styles.text}>Cidades</Text>
+					<Text style={styles.text}>alcançadas</Text>
 				</View>
+
 				<View style={styles.card}>
-					<FontAwesome name='group' size={70} color={theme.colors.black} />
-					<Text style={styles.text}>500</Text>
-					<Text style={styles.text}>Pessoas</Text>
+					<FontAwesome name='users' size={70} color={theme.colors.black} />
+					<Text style={styles.text}>150</Text>
+					<Text style={styles.text}>Usuarios</Text>
 				</View>
 			</View>
 		</View>
@@ -48,13 +53,13 @@ const styles = StyleSheet.create({
 		justifyContent: 'center',
 		alignItems: 'center',
 		padding: 14,
-		width: 150,
+		width: 160,
 	},
 
 	text: {
 		textAlign: 'center',
 		color: theme.colors.black,
-		fontSize: 24,
+		fontSize: 20,
 		fontFamily: theme.fonts.medium,
 	},
 });
