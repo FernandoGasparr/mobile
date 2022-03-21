@@ -25,8 +25,8 @@ export default function App() {
 	}
 	return (
 		<>
-			<StatusBar style='light' backgroundColor='transparent' translucent />
-			<Header />
+			<StatusBar backgroundColor='transparent' translucent style='auto' />
+			{/* <Header /> */}
 			<Navigation />
 		</>
 	);

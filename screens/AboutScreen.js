@@ -7,6 +7,7 @@ const AboutScreen = () => {
 			<Text
 				style={{
 					fontSize: 30,
+					marginTop: '10%',
 				}}
 			>
 				AboutScreen Sobre Nós

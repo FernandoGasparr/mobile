@@ -7,6 +7,7 @@ const RightsScreen = () => {
 			<Text
 				style={{
 					fontSize: 30,
+					marginTop: '10%',
 				}}
 			>
 				RightsScreen seus direitos
