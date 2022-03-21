@@ -6,7 +6,7 @@ import Lives from '../components/Lives/Index';
 const HomeScreen = () => {
 	return (
 		<View style={styles.container}>
-			<Text style={styles.title}>HomeScreen Tela Inicial</Text>
+			{/* <Text style={styles.title}>HomeScreen Tela Inicial</Text> */}
 			<SafeAreaView style={styles.container}>
 				<ScrollView style={styles.scrollView}>
 					<Conquest />

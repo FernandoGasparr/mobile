@@ -5,16 +5,6 @@ import Team from '../components/Team';
 const AboutScreen = () => {
 	return (
 		<View style={styles.container}>
-			<Text
-				style={{
-					marginTop: '10%',
-					fontSize: 30,
-					fontFamily: theme.fonts.bold,
-					textAlign: 'center',
-				}}
-			>
-				Sobre Nós
-			</Text>
 			<SafeAreaView style={styles.container}>
 				<ScrollView style={styles.scrollView}>
 					<Team />
