@@ -33,6 +33,7 @@ const styles = StyleSheet.create({
 		width: '100%',
 	},
 	title: {
+		color: theme.colors.black,
 		textAlign: 'center',
 		fontSize: 28,
 		fontFamily: theme.fonts.bold,

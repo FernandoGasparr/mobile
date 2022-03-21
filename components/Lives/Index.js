@@ -38,6 +38,7 @@ const Lives = () => {
 	];
 	return (
 		<View style={styles.container}>
+			<Text style={styles.title}>Nossas Lives</Text>
 			{streams.map(stream => {
 				return (
 					<Card
@@ -55,12 +56,15 @@ const Lives = () => {
 };
 const styles = StyleSheet.create({
 	container: {
-		borderWidth: 3,
-		borderColor: theme.colors.black,
-		borderStyle: 'solid',
 		alignItems: 'center',
 		justifyContent: 'center',
 		marginVertical: 14,
+	},
+	title: {
+		color: theme.colors.black,
+		textAlign: 'center',
+		fontSize: 28,
+		fontFamily: theme.fonts.bold,
 	},
 });
 export default Lives;
