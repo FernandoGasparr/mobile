@@ -6,11 +6,14 @@ import {
 	ScrollView,
 	Image,
 } from 'react-native';
+import { Link } from '@react-navigation/native';
+
 import React from 'react';
 import Conquest from '../components/conquest/Index';
 import { theme } from './../styles/theme';
 import Lives from '../components/Lives/Index';
 import comunity from '../assets/comunity.jpg';
+import FormContact from '../components/FormContact/Index';
 
 const HomeScreen = () => {
 	return (
@@ -21,6 +24,7 @@ const HomeScreen = () => {
 					<Image style={styles.img} source={comunity} />
 					<Conquest />
 					<Lives />
+					<FormContact />
 				</ScrollView>
 			</SafeAreaView>
 		</View>
