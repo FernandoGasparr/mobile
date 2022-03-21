@@ -1,19 +1,33 @@
-import { View, Text } from 'react-native';
-import React from 'react';
+import { View, Text, StyleSheet, SafeAreaView, ScrollView } from 'react-native';
+import { theme } from '../styles/theme';
+import Team from '../components/Team';
 
 const AboutScreen = () => {
 	return (
-		<View>
+		<View style={styles.container}>
 			<Text
 				style={{
-					fontSize: 30,
 					marginTop: '10%',
+					fontSize: 30,
+					fontFamily: theme.fonts.bold,
+					textAlign: 'center',
 				}}
 			>
-				AboutScreen Sobre Nós
+				Sobre Nós
 			</Text>
+			<SafeAreaView style={styles.container}>
+				<ScrollView style={styles.scrollView}>
+					<Team />
+				</ScrollView>
+			</SafeAreaView>
 		</View>
 	);
 };
 
+const styles = StyleSheet.create({
+	container: {
+		flex: 1,
+		backgroundColor: theme.colors.skin,
+	},
+});
 export default AboutScreen;
