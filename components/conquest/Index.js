@@ -29,13 +29,8 @@ const Conquest = () => {
 
 const styles = StyleSheet.create({
 	container: {
-		// flex: 1,
-		borderWidth: 4,
-		borderStyle: 'solid',
-		borderColor: theme.colors.skin,
+		backgroundColor: theme.colors.beige,
 		width: '100%',
-		padding: 14,
-		// height: '30%',
 	},
 	title: {
 		textAlign: 'center',
@@ -44,21 +39,14 @@ const styles = StyleSheet.create({
 	},
 	cardContainer: {
 		flexDirection: 'row',
-		borderWidth: 5,
-		borderStyle: 'solid',
-		borderColor: '#000',
 		justifyContent: 'center',
 		alignItems: 'center',
 		flexWrap: 'wrap',
 	},
 	card: {
-		// flex: 1,
 		justifyContent: 'center',
 		alignItems: 'center',
 		padding: 14,
-		borderWidth: 2,
-		borderStyle: 'solid',
-		borderColor: '#FFFFFF',
 		width: 150,
 	},
 

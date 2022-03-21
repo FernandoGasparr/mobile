@@ -1,21 +1,16 @@
-import { View, Text, StyleSheet } from 'react-native';
+import { View, Text, StyleSheet, SafeAreaView, ScrollView } from 'react-native';
 import React from 'react';
 import Conquest from '../components/conquest/Index';
 import { theme } from './../styles/theme';
 const HomeScreen = () => {
 	return (
 		<View style={styles.container}>
-			<Text
-				style={{
-					marginTop: '10%',
-					fontSize: 30,
-					fontFamily: theme.fonts.bold,
-					textAlign: 'center',
-				}}
-			>
-				HomeScreen Tela Inicial
-			</Text>
-			{/* <Conquest /> */}
+			<Text style={styles.title}>HomeScreen Tela Inicial</Text>
+			<SafeAreaView style={styles.container}>
+				<ScrollView style={styles.scrollView}>
+					<Conquest />
+				</ScrollView>
+			</SafeAreaView>
 		</View>
 	);
 };
@@ -24,6 +19,15 @@ const styles = StyleSheet.create({
 	container: {
 		flex: 1,
 		backgroundColor: theme.colors.background,
+	},
+	title: {
+		marginTop: '10%',
+		fontSize: 30,
+		fontFamily: theme.fonts.bold,
+		textAlign: 'center',
+	},
+	scrollView: {
+		backgroundColor: theme.colors.skin,
 	},
 });
 export default HomeScreen;
